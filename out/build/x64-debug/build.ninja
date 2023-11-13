@@ -70,6 +70,20 @@ build CMakeFiles\Journey.dir\MainReader.c.obj: C_COMPILER__Journey_unscanned_Deb
   TARGET_COMPILE_PDB = CMakeFiles\Journey.dir\
   TARGET_PDB = Journey.pdb
 
+build CMakeFiles\Journey.dir\Scanner.c.obj: C_COMPILER__Journey_unscanned_Debug C$:\Users\natha\source\repos\Journey\Scanner.c || cmake_object_order_depends_target_Journey
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI
+  OBJECT_DIR = CMakeFiles\Journey.dir
+  OBJECT_FILE_DIR = CMakeFiles\Journey.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Journey.dir\
+  TARGET_PDB = Journey.pdb
+
+build CMakeFiles\Journey.dir\MainScanner.c.obj: C_COMPILER__Journey_unscanned_Debug C$:\Users\natha\source\repos\Journey\MainScanner.c || cmake_object_order_depends_target_Journey
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI
+  OBJECT_DIR = CMakeFiles\Journey.dir
+  OBJECT_FILE_DIR = CMakeFiles\Journey.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Journey.dir\
+  TARGET_PDB = Journey.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Journey
@@ -78,7 +92,7 @@ build CMakeFiles\Journey.dir\MainReader.c.obj: C_COMPILER__Journey_unscanned_Deb
 #############################################
 # Link the executable Journey.exe
 
-build Journey.exe: C_EXECUTABLE_LINKER__Journey_Debug CMakeFiles\Journey.dir\Compilers.c.obj CMakeFiles\Journey.dir\Reader.c.obj CMakeFiles\Journey.dir\MainReader.c.obj
+build Journey.exe: C_EXECUTABLE_LINKER__Journey_Debug CMakeFiles\Journey.dir\Compilers.c.obj CMakeFiles\Journey.dir\Reader.c.obj CMakeFiles\Journey.dir\MainReader.c.obj CMakeFiles\Journey.dir\Scanner.c.obj CMakeFiles\Journey.dir\MainScanner.c.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
