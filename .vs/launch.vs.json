@@ -1,0 +1,16 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "Journey.exe",
+      "name": "Journey.exe",
+      "args": [
+        "r",
+        "README.txt"
+      ]
+    }
+  ]
+}

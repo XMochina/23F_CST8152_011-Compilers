@@ -58,7 +58,7 @@ enum TOKENS {
 	ERR_T,		/*  0: Error token */
 	FNI_T,		/*  1: Function name identifier token */
 	INL_T,		/*  2: Integer literal token */
-	FLL_T,		/*	3: Float literal toekn */
+	FLL_T,		/*	3: Float literal token */
 	STL_T,		/*  4: String literal token */
 	LPR_T,		/*  5: Left parenthesis token */
 	RPR_T,		/*  6: Right parenthesis token */
@@ -108,7 +108,7 @@ static string tokenStrTable[NUM_TOKENS] = {
 /* TO_DO: Operators token attributes */
 typedef enum ArithmeticOperators { OP_ADD, OP_SUB, OP_MUL, OP_POW, OP_DIV, OP_MOD } AriOperator; // +,-,*,/,%
 typedef enum UnaryOperators { OP_UAD, OP_USU } UnaOperator; // ++,--
-typedef enum RelationalOperators { OP_EQ, OP_NE, OP_GT, OP_LT, OP_GE, OP_LE } RelOperator; // =,!=,>,<,>=,<=
+typedef enum RelationalOperators { OP_EQ, OP_NE, OP_GT, OP_LT, OP_GE, OP_LE } RelOperator; // ==,!=,>,<,>=,<=
 typedef enum AssignemntOperators { OP_AAS, OP_AAD, OP_ASU, OP_AMU, OP_ADI, OP_ASH } AssOperator; // =,+=,-=,*=,/=,:=
 typedef enum LogicalOperators { OP_AND, OP_OR, OP_NOT } LogOperator; // &&,||,!
 typedef enum SourceEndOfFile { SEOF_0, SEOF_255 } EofOperator;
@@ -277,7 +277,7 @@ Language keywords
 */
 
 /* TO_DO: Define the number of Keywords from the language */
-#define KWT_SIZE 10
+#define KWT_SIZE 19
 
 /* TO_DO: Define the list of keywords */
 static string keywordTable[KWT_SIZE] = {
@@ -290,7 +290,16 @@ static string keywordTable[KWT_SIZE] = {
 	"const",		/* KW06 */
 	"if",			/* KW07 */
 	"defer",		/* KW08 */
-	"goto"			/* KW09 */
+	"goto",			/* KW09 */
+	"var",			/* KW10 */
+	"rune",			/* KW11 */
+	"string",		/* KW12 */
+	"int32",		/* KW13 */
+	"float32",		/* KW15 */
+	"boolean",		/* KW16 */
+	"flag",			/* KW17 */
+	"int64",		/* KW18 */
+	"float64"		/* KW19 */
 };
 
 /* NEW SECTION: About indentation */
